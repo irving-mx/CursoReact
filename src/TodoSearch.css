@@ -4,4 +4,6 @@ input{
     display: flex;
     margin: 20px auto;
     border-radius: 5px;
+    border:4px solid #aa39db85;
+    text-align:center;
 }
