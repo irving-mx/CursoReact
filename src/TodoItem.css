@@ -1,0 +1,50 @@
+li{
+    width: 280px;
+    height: 100px;
+    background-color: rgb(139 149 156 / 11%);
+    display: grid;
+    border-radius: 10px;
+    grid-template-columns: 1fr 2fr 0.2fr;
+    /* place-items: center; */
+    position: relative;
+    padding: 10px;
+    align-items: center;
+    
+}
+.close-icon{
+    position: absolute;
+    top: -20px;
+    right: -19px;
+    cursor: pointer;
+}
+.close-icon:hover{
+    background-color: rgba(255, 4, 4, 0.623);
+    border-radius: 50%;
+}
+.check-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(45 174 6 / 46%);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    /* background-color: #bfd2ae47; */
+    cursor: pointer;
+}
+.check-icon--active{
+    background-color: #77f80447;
+}
+.check-icon:hover{
+    background-color: rgba(9, 184, 253, 0.267);
+}
+.text-tarea{
+    /* display: inline-block; */
+    display: flex;
+    margin: 0;
+    text-align: start;
+}
+.text-area--complete{
+    text-decoration: line-through;
+}

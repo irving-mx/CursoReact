@@ -1,0 +1,16 @@
+button{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: fixed;
+    top: calc(100vh - 117px);
+    left: calc(100vw - 126px);
+    background-color: #3ef524;
+
+    transform: rotate(0);
+    transition: .3s ease;
+}
+
+button:hover{
+    transform: rotate(224deg);
+}
