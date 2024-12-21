@@ -17,10 +17,10 @@ li{
     right: -19px;
     cursor: pointer;
 }
-.close-icon:hover{
+/* .close-icon:hover{
     background-color: rgba(255, 4, 4, 0.623);
     border-radius: 50%;
-}
+} */
 .check-icon{
     display: flex;
     justify-content: center;
@@ -36,9 +36,9 @@ li{
 .check-icon--active{
     background-color: #77f80447;
 }
-.check-icon:hover{
+/* .check-icon:hover{
     background-color: rgba(9, 184, 253, 0.267);
-}
+} */
 .text-tarea{
     /* display: inline-block; */
     display: flex;

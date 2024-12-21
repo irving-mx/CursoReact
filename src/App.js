@@ -20,7 +20,25 @@ function App() {
   const [searchValue, setSearchValue] = React.useState('');
   const completedTodos = todos.filter((todo)=>todo.completed).length;
   const totalTodos = todos.length;
-  const searchedTodos = defaultTodos.filter(search => search.text.toLowerCase().includes(searchValue.toLowerCase()));
+  const searchedTodos = todos.filter(search => search.text.toLowerCase().includes(searchValue.toLowerCase()));
+
+  const selectTodo = (text) => {
+    const newTodos = [...todos];
+    console.log("Seleccione: " + text)
+    const indexTodos = newTodos.findIndex( todo => todo.text == text); 
+    newTodos[indexTodos].completed = true;
+    setTodos(newTodos);
+  }
+
+  const deleteTodo = (text) => {
+    const newTodos = [...todos];
+    console.log("Seleccione: " + text)
+    const indexTodos = newTodos.findIndex( todo => todo.text == text); 
+    newTodos.splice(indexTodos, 1)
+    setTodos(newTodos);
+  }
+
+
   console.log('Palabra:  '+searchValue)
   console.log(searchedTodos)
   return (
@@ -31,7 +49,13 @@ function App() {
 
       <TodoList>
       {searchedTodos.map((todo,index) => (
-        <TodoItem key={index} text={todo.text} completed={todo.completed} />
+        <TodoItem 
+        key={todo.text} 
+        text={todo.text}
+        completed={todo.completed}  
+        onCompleted={ () => selectTodo(todo.text)} 
+        onDeleted={ () => deleteTodo(todo.text)}
+        />
       ))}
       </TodoList>
 
