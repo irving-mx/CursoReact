@@ -1,18 +1,26 @@
 import './TodoItem.css';
-import checkIcon from './icons/checkIcon.svg';
-import deleteIcon from './icons/deleteIcon.svg';
+// import checkIcon from './icons/checkIcon.svg';
+// import deleteIcon from './icons/deleteIcon.svg';
+// import { TodoIcon } from './TodoIcon';
+import { DeleteIcon } from './DeleteIcon';
+import { CompleteIcon } from './CompleteIcon';
 
 function TodoItem({text, completed, onCompleted, onDeleted}){
 
     return(
     <li>
-        <span onClick={onCompleted} className={`check-icon ${completed && "check-icon--active"}`}>
+        <CompleteIcon  accion={onCompleted} />
+        {/* <span onClick={onCompleted} className={`check-icon ${completed && "check-icon--active"}`}>
             <img src={checkIcon} alt='icono de aprovado' />
-        </span>
+        </span> */}
+
+        
         <p className={`text-tarea ${completed && "text-area--complete"}`}>{text}</p>
-        <span onClick={onDeleted} className='close-icon'>
+
+        <DeleteIcon accion={onDeleted}/>
+        {/* <span onClick={onDeleted} className='close-icon'>
             <img src={deleteIcon} alt='icono de eliminar' />
-        </span>
+        </span> */}
     </li>
     );
 }

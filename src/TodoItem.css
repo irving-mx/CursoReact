@@ -11,17 +11,17 @@ li{
     align-items: center;
     
 }
-.close-icon{
+/* .close-icon{
     position: absolute;
     top: -20px;
     right: -19px;
     cursor: pointer;
-}
+} */
 /* .close-icon:hover{
     background-color: rgba(255, 4, 4, 0.623);
     border-radius: 50%;
 } */
-.check-icon{
+/* .check-icon{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,11 +31,11 @@ li{
     height: 25px;
     padding: 10px;
     /* background-color: #bfd2ae47; */
-    cursor: pointer;
-}
-.check-icon--active{
+   /* cursor: pointer;
+} */
+/* .check-icon--active{
     background-color: #77f80447;
-}
+} */
 /* .check-icon:hover{
     background-color: rgba(9, 184, 253, 0.267);
 } */
@@ -48,3 +48,52 @@ li{
 .text-area--complete{
     text-decoration: line-through;
 }
+
+/* cdcdcd */
+
+
+
+
+/* 
+.Icon-container {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    font-size: 24px;
+    font-weight: bold;
+    /* background-color: #CCC; */
+
+    /*
+  }
+  
+  .Icon-container-check {
+    position: absolute;
+    left: 12px;
+  }
+  .Icon-container-check--active {
+    color: #4caf50;
+  }
+  
+  .Icon-container-delete {
+    position: absolute;
+    top: -24px;
+    right: 0;
+  }
+  .Icon-container-delete:hover {
+    color: red;
+  }
+  
+  .Icon-svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .Icon-container-check:hover .Icon-svg {
+    fill: green;
+  }
+  .Icon-container-delete:hover .Icon-svg {
+    fill: red;
+  } */

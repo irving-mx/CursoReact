@@ -1,0 +1,28 @@
+.icon-delete{
+    position: absolute;
+    top: -20px;
+    right: -19px;
+    cursor: pointer;
+}
+.icon-delete:hover{
+    background-color: rgba(255, 4, 4, 0.623);
+    border-radius: 50%;
+}
+.icon-check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(45 174 6 / 46%);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    /* background-color: #bfd2ae47; */
+    cursor: pointer;
+}
+.check-icon--active{
+    background-color: #77f80447;
+}
+/* .check-icon:hover{
+    background-color: rgba(9, 184, 253, 0.267);
+} */
