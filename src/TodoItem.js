@@ -9,7 +9,7 @@ function TodoItem({text, completed, onCompleted, onDeleted}){
 
     return(
     <li>
-        <CompleteIcon  accion={onCompleted} />
+        <CompleteIcon  onClick={onCompleted} />
         {/* <span onClick={onCompleted} className={`check-icon ${completed && "check-icon--active"}`}>
             <img src={checkIcon} alt='icono de aprovado' />
         </span> */}
@@ -17,7 +17,7 @@ function TodoItem({text, completed, onCompleted, onDeleted}){
         
         <p className={`text-tarea ${completed && "text-area--complete"}`}>{text}</p>
 
-        <DeleteIcon accion={onDeleted}/>
+        <DeleteIcon onClick={onDeleted}/>
         {/* <span onClick={onDeleted} className='close-icon'>
             <img src={deleteIcon} alt='icono de eliminar' />
         </span> */}
