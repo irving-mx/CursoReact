@@ -1,12 +1,17 @@
 .icon-delete{
     position: absolute;
-    top: -20px;
-    right: -19px;
+    top: -8px;
+    right: -10px;
     cursor: pointer;
+    fill: gray;
 }
-.icon-delete:hover{
-    background-color: rgba(255, 4, 4, 0.623);
-    border-radius: 50%;
+.Icon-svg{
+    width: 24px;
+    height: 24px;
+}
+.icon-delete:hover .Icon-svg{
+    fill: red;
+    /* border-radius: 50%; */
 }
 .icon-check{
     display: flex;

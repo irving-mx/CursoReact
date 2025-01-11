@@ -9,7 +9,7 @@ function TodoItem({text, completed, onCompleted, onDeleted}){
 
     return(
     <li>
-        <CompleteIcon  onClick={onCompleted} />
+        <CompleteIcon completed={completed} onClick={onCompleted} />
         {/* <span onClick={onCompleted} className={`check-icon ${completed && "check-icon--active"}`}>
             <img src={checkIcon} alt='icono de aprovado' />
         </span> */}

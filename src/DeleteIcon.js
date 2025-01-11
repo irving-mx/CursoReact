@@ -4,7 +4,7 @@ function DeleteIcon({ onClick }){
     return(
         <TodoIcon
         type="delete"
-        // color="black"
+        color="gray"
         onClick={onClick}
         />
     );
