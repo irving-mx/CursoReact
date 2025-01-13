@@ -1,5 +1,5 @@
 import './CreateTodoButton.css'
-import masIcon from './icons/masIcon.svg'
+import masIcon from '../icons/masIcon.svg'
 function CreateTodoButton(){
     return(
         <button 

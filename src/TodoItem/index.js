@@ -2,8 +2,8 @@ import './TodoItem.css';
 // import checkIcon from './icons/checkIcon.svg';
 // import deleteIcon from './icons/deleteIcon.svg';
 // import { TodoIcon } from './TodoIcon';
-import { DeleteIcon } from './DeleteIcon';
-import { CompleteIcon } from './CompleteIcon';
+import { DeleteIcon } from '../TodoIcon/DeleteIcon';
+import { CompleteIcon } from '../TodoIcon/CompleteIcon';
 
 function TodoItem({text, completed, onCompleted, onDeleted}){
 
