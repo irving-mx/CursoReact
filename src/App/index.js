@@ -16,22 +16,13 @@ import React from 'react';
 
 // localStorage.removeItem("defaultTodos_V1");
 
-
-
 function App() {
-  // const localStorageTodos = localStorage.getItem("defaultTodos_V1");
-  // let parseTodos;
-  // if(localStorageTodos){
-  //   parseTodos = JSON.parse(localStorageTodos);
-  // }else{
-  //   parseTodos = [];  
-  // }
-  // const saveTodos = (newTodos) => {
-  //   localStorage.setItem("defaultTodos_V1",JSON.stringify(newTodos));
-  //   setTodos(newTodos);
-  // }
 
-  const [todos, saveTodos] = useLocalStorage("defaultTodos_V1", []);
+  const {item: todos,
+        saveItem: saveTodos,
+        error,
+        loading,
+      } = useLocalStorage("defaultTodos_V1", []);
 
   const [searchValue, setSearchValue] = React.useState('');
   const completedTodos = todos.filter((todo)=>todo.completed).length;
@@ -60,7 +51,8 @@ function App() {
   console.log(searchedTodos)
   return (
       <AppUI
-      
+        error={error}
+        loading={loading}
         completedTodos={completedTodos}
         totalTodos={totalTodos}
         searchValue={searchValue}
