@@ -7,6 +7,7 @@ import { EmptyTodos } from '../EmptyTodos';
 import { TodosError } from '../TodosError';
 import { CreateTodoButton } from '../CreateTodoButton';
 import { TodoContext } from '../TodoContext';
+import { TodoCounterLoading} from '../TodoCounterLoading';
 import React from 'react';
 
 function  AppUI(
@@ -23,32 +24,38 @@ function  AppUI(
 // }
 
 ){
+    const {
+        loading,
+        error,
+        searchedTodos,
+        selectTodo,
+        deleteTodo,
+    } = React.useContext(TodoContext);
     return(
 
         <React.Fragment>
-            <TodoCounter   />
-            <TodoSearch  />
-
-            <TodoContext.Consumer>
-            {({
-                loading,
-                error,
-                searchedTodos,
-                selectTodo,
-                deleteTodo,
-            }) => (
+            {loading && <TodoCounterLoading />}
+            {!loading && (
+                <>
+                    <TodoCounter />
+                    <TodoSearch />
+                </>
+            )}
+            
+            { 
                 <TodoList>
                 {loading && (
                 <> 
                     <TodosLoading/>
                     <TodosLoading/>
-                    <TodosLoading/> 
+                    <TodosLoading/>
                 </>
                 )}
                 {error && <TodosError/>}
-                {(!loading && searchedTodos.lenght === 0) && <EmptyTodos/> }
+                {(!loading && searchedTodos.length === 0) && <EmptyTodos/> }
         
                 {searchedTodos.map((todo,index) => (
+                    
                     <TodoItem 
                     key={todo.text} 
                     text={todo.text}
@@ -58,8 +65,8 @@ function  AppUI(
                     />
                 ))}
                 </TodoList>
-                )}
-            </TodoContext.Consumer>
+                }
+            
 
             {/* <TodoList>
             {loading && (
