@@ -10,6 +10,7 @@ function TodoProvider({ children }){
             loading,
         } = useLocalStorage("defaultTodos_V1", []);
     
+    const [openModal, setOpenModal] = React.useState(true);
     const [searchValue, setSearchValue] = React.useState('');
     const completedTodos = todos.filter((todo)=>todo.completed).length;
     const totalTodos = todos.length;
@@ -43,6 +44,8 @@ return (
         searchedTodos,
         selectTodo,
         deleteTodo,
+        openModal,
+        setOpenModal,
         }
     }>
         { children }
