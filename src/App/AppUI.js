@@ -9,6 +9,7 @@ import { CreateTodoButton } from '../CreateTodoButton';
 import { TodoContext } from '../TodoContext';
 import { TodoCounterLoading} from '../TodoCounterLoading';
 import { Modal } from '../Modal';
+import { TodoForm } from '../TodoForm';
 import React from 'react';
 
 function  AppUI(
@@ -98,7 +99,7 @@ function  AppUI(
             {
                 openModal && (
                     <Modal>
-                        La funcionalidad de agregar TODOS
+                        <TodoForm/>
                     </Modal>
                 )
             }

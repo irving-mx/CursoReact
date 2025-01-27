@@ -1,0 +1,11 @@
+.TodoCancel{
+    height: 45px;
+    width: 85px;
+    border-radius: 8px
+}
+
+.TodoCancel:hover{
+    background-color: #62d6f2;
+    cursor: pointer;
+}
+

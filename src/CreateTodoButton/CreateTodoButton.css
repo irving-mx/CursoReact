@@ -1,4 +1,4 @@
-button{
+.createTodoButton{
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -12,6 +12,6 @@ button{
     z-index: 1;
 }
 
-button:hover{
+.createTodoButton:hover{
     transform: rotate(224deg);
 }

@@ -8,7 +8,9 @@ const {
     setSearchValue,
 } = React.useContext(TodoContext);
     return(
-        <input placeholder="Cortar Cebolla"
+        <input 
+        className='TodoSearch'
+        placeholder="Cortar Cebolla"
         value={searchValue}
         onChange={(event)=> {
             setSearchValue(event.target.value);

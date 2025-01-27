@@ -5,7 +5,7 @@ import React from 'react';
 function CreateTodoButton( {setOpenModal} ){
 
     return(
-        <button 
+        <button  className='createTodoButton'
             onClick={(event) => { 
             console.log("Le diste click al boton de agregar");
             console.log(event);

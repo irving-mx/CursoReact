@@ -1,0 +1,22 @@
+.label-TODO{
+    height: 30px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+.input-TODO{
+    height: 90px;
+    width: 400px;
+}
+
+.buttons{
+    width: 400px;
+    height: 100px;
+    margin-top: 25px;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+

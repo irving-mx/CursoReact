@@ -16,7 +16,15 @@ function TodoProvider({ children }){
     const totalTodos = todos.length;
     const searchedTodos = todos.filter(search => search.text.toLowerCase().includes(searchValue.toLowerCase()));
     
-    
+    const newTodo = (text) => {
+        console.log("El nuevo TODO es: " + text)
+        const newTodos = [...todos];
+        newTodos.push({
+            text,
+            completed : false,
+        });
+        saveTodos(newTodos);
+    }
     const selectTodo = (text) => {
         const newTodos = [...todos];
         console.log("Seleccione: " + text)
@@ -46,6 +54,7 @@ return (
         deleteTodo,
         openModal,
         setOpenModal,
+        newTodo,
         }
     }>
         { children }
