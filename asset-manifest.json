@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/C:/Users/hp/Documents/Cursos_Platzi/c_frontend_developer/CursoReact/curso-react-intro/build/static/css/main.831c1768.css",
-    "main.js": "/C:/Users/hp/Documents/Cursos_Platzi/c_frontend_developer/CursoReact/curso-react-intro/build/static/js/main.636e90d0.js",
-    "index.html": "/C:/Users/hp/Documents/Cursos_Platzi/c_frontend_developer/CursoReact/curso-react-intro/build/index.html",
-    "static/media/deleteIcon.svg": "/C:/Users/hp/Documents/Cursos_Platzi/c_frontend_developer/CursoReact/curso-react-intro/build/static/media/deleteIcon.d9c7e0eeb3f573572e1521b7b69ed33e.svg",
-    "static/media/masIcon.svg": "/C:/Users/hp/Documents/Cursos_Platzi/c_frontend_developer/CursoReact/curso-react-intro/build/static/media/masIcon.487cbf82a18be00e6be7de68071fd32a.svg",
-    "static/media/checkIcon.svg": "/C:/Users/hp/Documents/Cursos_Platzi/c_frontend_developer/CursoReact/curso-react-intro/build/static/media/checkIcon.af03c9a6a0411e40578874e6f00e807b.svg",
-    "main.831c1768.css.map": "/C:/Users/hp/Documents/Cursos_Platzi/c_frontend_developer/CursoReact/curso-react-intro/build/static/css/main.831c1768.css.map",
-    "main.636e90d0.js.map": "/C:/Users/hp/Documents/Cursos_Platzi/c_frontend_developer/CursoReact/curso-react-intro/build/static/js/main.636e90d0.js.map"
+    "main.css": "/CursoReact/static/css/main.831c1768.css",
+    "main.js": "/CursoReact/static/js/main.7ec3989a.js",
+    "index.html": "/CursoReact/index.html",
+    "static/media/deleteIcon.svg": "/CursoReact/static/media/deleteIcon.d9c7e0eeb3f573572e1521b7b69ed33e.svg",
+    "static/media/masIcon.svg": "/CursoReact/static/media/masIcon.487cbf82a18be00e6be7de68071fd32a.svg",
+    "static/media/checkIcon.svg": "/CursoReact/static/media/checkIcon.af03c9a6a0411e40578874e6f00e807b.svg",
+    "main.831c1768.css.map": "/CursoReact/static/css/main.831c1768.css.map",
+    "main.7ec3989a.js.map": "/CursoReact/static/js/main.7ec3989a.js.map"
   },
   "entrypoints": [
     "static/css/main.831c1768.css",
-    "static/js/main.636e90d0.js"
+    "static/js/main.7ec3989a.js"
   ]
 }
