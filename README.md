@@ -8,6 +8,9 @@ La rama principal contiene el código con el que eempezamos el curso. En las dem
 
 ¡Mucha suerte aprendiendo React! #NuncaParesDeAprender
 
+El proyecto desplegado en github pages se encuentra aqui:
+https://irving-mx.github.io/CursoReact/
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
